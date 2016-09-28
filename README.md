@@ -12,7 +12,7 @@ A wrapper for the fetch api created by Gerard Banasig
     <head>
         <meta charset="UTF-8">
         <title>Document</title>
-        <script src="RHFetch.js"></script>
+        <script src="https://github.com/tuxrace/RHFetch/blob/master/RHFetch.js"></script>
     </head>
     <body>
         <h1 id="app"></h1>    
