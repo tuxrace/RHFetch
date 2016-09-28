@@ -6,7 +6,7 @@ A wrapper for the fetch api created by Gerard Banasig
     RHFetch
     .get('https://jsonplaceholder.typicode.com/posts/1')
     .result(r => {alert(r.title)});
-## On the browser
+## Putting it all together
     <!DOCTYPE html>
     <html lang="en">
     <head>
