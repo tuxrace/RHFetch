@@ -1,8 +1,12 @@
 # RHFetch
 A wrapper for the fetch api created by Gerard Banasig
 
-##Usage
+## Usage
 
+    RHFetch
+    .get('https://jsonplaceholder.typicode.com/posts/1')
+    .result(r => {alert(r.title)});
+## On the browser
     <!DOCTYPE html>
     <html lang="en">
     <head>
