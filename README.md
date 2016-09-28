@@ -1,5 +1,5 @@
 # RHFetch
-A wrapper for the fetch api created by Gerard Banasig
+A wrapper for the fetch api created by Gerard Banasig.
 Request to a remote rest api using a simple interface.
 
 ## Usage
