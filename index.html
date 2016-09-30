@@ -6,11 +6,13 @@
     <script src="RHFetch.js"></script>
 </head>
 <body>
-    <h1 id="app"></h1>    
+    <h1>RHFetch working example</h1>
+    <h2 id="app">Getting data from remote https://jsonplaceholder.typicode.com/posts/1</h2>
+    <h3 id="app"></h3>    
     <script>                      
         RHFetch
         .get('https://jsonplaceholder.typicode.com/posts/1')
-        .result(r => {alert(r.title)});                                                  
+        .result(r => {document.getElementById('app').innerHTML = `Data form remote: ${result.title}`});                                                  
     </script>    
 </body>
 </html>
