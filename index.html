@@ -12,7 +12,7 @@
     <script>                      
         RHFetch
         .get('https://jsonplaceholder.typicode.com/posts/1')
-        .result(r => {document.getElementById('app').innerHTML = `Data form remote: ${result.title}`});                                                  
+        .result(r => {document.getElementById('app').innerHTML = `Data form remote: ${r.title}`});                                                  
     </script>    
 </body>
 </html>
