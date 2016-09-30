@@ -7,12 +7,20 @@
 </head>
 <body>
     <h1>RHFetch working example</h1>
-    <h2 id="app">Getting data from remote https://jsonplaceholder.typicode.com/posts/1</h2>
-    <h3 id="app"></h3>    
-    <script>                      
+    <code>
         RHFetch
         .get('https://jsonplaceholder.typicode.com/posts/1')
-        .result(r => {document.getElementById('app').innerHTML = `Data form remote: ${r.title}`});                                                  
+        .result(r => {document.getElementById('app').innerHTML = `Data form remote: ${r.title}`});
+    </code>
+    <button id="getdata">Get data from remote</button>
+    <h2>Date from remote https://jsonplaceholder.typicode.com/posts/1</h2>
+    <pre id="app"></pre>        
+    <script>           
+        document.getElementById("getdata").addEventListener("click", function(){
+            RHFetch
+            .get('https://jsonplaceholder.typicode.com/posts/1')
+            .result(r => {document.getElementById('app').innerHTML = `Data form remote: ${r.title}`});
+        })                                                                     
     </script>    
 </body>
 </html>
