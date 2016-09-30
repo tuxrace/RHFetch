@@ -15,7 +15,7 @@
         document.getElementById("getdata").addEventListener("click", function(){
             RHFetch
             .get('https://jsonplaceholder.typicode.com/posts/1')
-            .result(r => {document.getElementById('app').innerHTML = `Data form remote: ${r.title}`});
+            .result(r => {document.getElementById('app').innerHTML = `Data from remote: ${r.title}`});
         })                                                                     
     </script>    
 </body>
