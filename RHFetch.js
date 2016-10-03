@@ -1,12 +1,15 @@
 var RHFetch = (function() {
+    
     const FetchOptions = {
         method:'GET',
         headers: () => {
             return new Headers()
         },
         mode: 'cors',
-        cache:'default'
+        cache:'default',
+        body:''
     }
+
     this.opts = FetchOptions
     this.version = 0.1 
 
@@ -17,9 +20,10 @@ var RHFetch = (function() {
         return this
     }
     
-    this.post = () => {
+    this.post = (url, body) => {
         FetchOptions.method = 'POST'
-        this.opts = FetchOptions
+        FetchOptions.body = body
+        this.opts = FetchOptions        
         this.url = url
         return this
     }
@@ -32,7 +36,8 @@ var RHFetch = (function() {
             console.log(err)
         })                           
         return this             
-    }    
+    }        
+    
 })
 
 window.RHFetch = new RHFetch();
