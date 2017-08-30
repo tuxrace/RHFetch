@@ -1,3 +1,6 @@
 module.exports = {
-  entry: './lib'
+  entry: './lib',
+  output:{
+    filename:'rh-fetch.js'
+  }
 }
